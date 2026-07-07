@@ -1,0 +1,350 @@
+/* ===============================
+   AI Virtual Classroom CSS
+   =============================== */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Body */
+
+body {
+
+    background: #f4f7fb;
+
+    color: #333;
+
+}
+
+
+
+/* Header */
+
+header {
+
+    background: #1e3c72;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+
+}
+
+
+
+header h1 {
+
+    font-size: 32px;
+
+}
+
+
+header p {
+
+    margin-top: 10px;
+
+}
+
+
+
+/* Navigation */
+
+nav {
+
+    background: #16325c;
+
+    padding: 15px;
+
+    text-align: center;
+
+}
+
+
+
+nav a {
+
+    color: white;
+
+    text-decoration: none;
+
+    margin: 10px;
+
+    font-size: 16px;
+
+}
+
+
+nav a:hover {
+
+    color: #ffd700;
+
+}
+
+
+
+/* Container */
+
+.container {
+
+    width: 90%;
+
+    margin: 30px auto;
+
+}
+
+
+
+/* Hero Section */
+
+.hero {
+
+    text-align: center;
+
+    padding: 50px;
+
+}
+
+
+
+.hero h2 {
+
+    font-size: 35px;
+
+    margin-bottom: 20px;
+
+}
+
+
+
+.hero p {
+
+    font-size: 18px;
+
+    line-height: 1.6;
+
+}
+
+
+
+/* Buttons */
+
+button {
+
+    background: #1e88e5;
+
+    color: white;
+
+    border: none;
+
+    padding: 12px 25px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    margin-top: 15px;
+
+    font-size: 16px;
+
+}
+
+
+
+button:hover {
+
+    background: #0d47a1;
+
+}
+
+
+
+/* Cards */
+
+.card-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(250px,1fr)
+    );
+
+    gap: 20px;
+
+}
+
+
+
+.card {
+
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+}
+
+
+.card h3 {
+
+    margin-bottom: 15px;
+
+}
+
+
+
+/* Forms */
+
+form {
+
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    max-width: 500px;
+
+}
+
+
+
+label {
+
+    display: block;
+
+    margin-top: 15px;
+
+}
+
+
+
+input {
+
+    width: 100%;
+
+    padding: 10px;
+
+    margin-top: 5px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 5px;
+
+}
+
+
+
+/* Tables */
+
+table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    background: white;
+
+}
+
+
+
+th {
+
+    background: #1e3c72;
+
+    color: white;
+
+}
+
+
+
+td, th {
+
+    padding: 12px;
+
+    border: 1px solid #ddd;
+
+    text-align: center;
+
+}
+
+
+
+/* Lists */
+
+ul {
+
+    background: white;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+}
+
+
+
+li {
+
+    margin: 10px;
+
+}
+
+
+
+/* Footer */
+
+footer {
+
+    background: #16325c;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 15px;
+
+    margin-top: 30px;
+
+}
+
+
+
+/* Mobile Responsive */
+
+@media(max-width:600px){
+
+    nav a {
+
+        display: block;
+
+        margin: 10px;
+
+    }
+
+
+    .hero {
+
+        padding: 20px;
+
+    }
+
+
+    header h1 {
+
+        font-size: 24px;
+
+    }
+
+}
