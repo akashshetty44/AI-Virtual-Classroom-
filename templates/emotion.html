@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Emotion Detection</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<header>
+    <h1>😊 Student Emotion Detection</h1>
+</header>
+
+
+<nav>
+    <a href="/">Home</a>
+    <a href="/dashboard">Dashboard</a>
+    <a href="/attendance">Attendance</a>
+    <a href="/notes">Notes</a>
+</nav>
+
+
+<div class="container">
+
+    <h2>AI Emotion Analysis</h2>
+
+    <p>
+        The system detects student emotions using
+        DeepFace and Computer Vision technology.
+    </p>
+
+
+    <div class="card-grid">
+
+        <div class="card">
+            <h3>😊 Happy</h3>
+            <p>Student is engaged and comfortable.</p>
+        </div>
+
+
+        <div class="card">
+            <h3>😐 Neutral</h3>
+            <p>Student has normal expression.</p>
+        </div>
+
+
+        <div class="card">
+            <h3>😟 Sad</h3>
+            <p>Student may need attention.</p>
+        </div>
+
+
+        <div class="card">
+            <h3>😡 Angry</h3>
+            <p>Student appears disturbed.</p>
+        </div>
+
+    </div>
+
+
+    <br>
+
+
+    <a href="/start_emotion">
+
+        <button>
+            ▶ Start Emotion Detection
+        </button>
+
+    </a>
+
+
+</div>
+
+
+<footer>
+
+    <p>
+        AI Virtual Classroom |
+        Emotion Recognition System
+    </p>
+
+</footer>
+
+
+</body>
+
+</html>
