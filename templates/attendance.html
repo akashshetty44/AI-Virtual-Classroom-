@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Attendance</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<header>
+    <h1>📋 Face Recognition Attendance</h1>
+</header>
+
+
+<nav>
+    <a href="/">Home</a>
+    <a href="/dashboard">Dashboard</a>
+    <a href="/students">Students</a>
+    <a href="/reports">Reports</a>
+</nav>
+
+
+<div class="container">
+
+    <h2>Automatic Attendance System</h2>
+
+    <p>
+        This module uses Artificial Intelligence and
+        Face Recognition to identify students and
+        mark attendance automatically.
+    </p>
+
+
+    <div class="card">
+
+        <h3>How it works</h3>
+
+        <ul>
+            <li>Student face images are registered.</li>
+            <li>AI detects faces through webcam.</li>
+            <li>Registered students are recognized.</li>
+            <li>Attendance is stored in database.</li>
+        </ul>
+
+    </div>
+
+
+    <br>
+
+
+    <a href="/start_attendance">
+
+        <button>
+            ▶ Start Face Recognition Attendance
+        </button>
+
+    </a>
+
+
+    <br><br>
+
+
+    <a href="/reports">
+
+        <button>
+            View Attendance Report
+        </button>
+
+    </a>
+
+
+</div>
+
+
+<footer>
+    <p>
+        AI Virtual Classroom | Face Recognition Module
+    </p>
+</footer>
+
+
+</body>
+
+</html>
