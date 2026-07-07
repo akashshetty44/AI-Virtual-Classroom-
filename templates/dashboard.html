@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | AI Virtual Classroom</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<header>
+    <h1>🎓 AI Virtual Classroom Dashboard</h1>
+</header>
+
+<nav>
+    <a href="/">Home</a>
+    <a href="/register">Register Student</a>
+    <a href="/students">Students</a>
+    <a href="/attendance">Attendance</a>
+    <a href="/emotion">Emotion</a>
+    <a href="/notes">Notes</a>
+    <a href="/quiz">Quiz</a>
+    <a href="/prediction">Prediction</a>
+    <a href="/reports">Reports</a>
+    <a href="/about">About</a>
+</nav>
+
+<div class="container">
+
+    <h2>Dashboard</h2>
+
+    <div class="card-grid">
+
+        <div class="card">
+            <h3>👨‍🎓 Student Registration</h3>
+            <p>Register new students and capture face images.</p>
+            <a href="/register">
+                <button>Open</button>
+            </a>
+        </div>
+
+        <div class="card">
+            <h3>📋 Attendance</h3>
+            <p>Automatic attendance using Face Recognition.</p>
+            <a href="/attendance">
+                <button>Start</button>
+            </a>
+        </div>
+
+        <div class="card">
+            <h3>😊 Emotion Detection</h3>
+            <p>Monitor classroom engagement in real time.</p>
+            <a href="/emotion">
+                <button>Open</button>
+            </a>
+        </div>
+
+        <div class="card">
+            <h3>📝 Automatic Notes</h3>
+            <p>Convert lecture audio into text and PDF notes.</p>
+            <a href="/notes">
+                <button>Generate</button>
+            </a>
+        </div>
+
+        <div class="card">
+            <h3>❓ AI Quiz Generator</h3>
+            <p>Create quizzes automatically from lecture notes.</p>
+            <a href="/quiz">
+                <button>Generate</button>
+            </a>
+        </div>
+
+        <div class="card">
+            <h3>📊 Performance Prediction</h3>
+            <p>Predict student performance using AI.</p>
+            <a href="/prediction">
+                <button>Predict</button>
+            </a>
+        </div>
+
+        <div class="card">
+            <h3>📈 Reports</h3>
+            <p>View attendance and quiz reports.</p>
+            <a href="/reports">
+                <button>View</button>
+            </a>
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+    <p>AI Virtual Classroom | Flask + OpenCV + DeepFace + Machine Learning</p>
+</footer>
+
+</body>
+</html>
