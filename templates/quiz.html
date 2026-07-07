@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>AI Quiz Generator</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+    <h1>❓ AI Quiz Generator</h1>
+
+</header>
+
+
+
+<nav>
+
+    <a href="/">Home</a>
+    <a href="/dashboard">Dashboard</a>
+    <a href="/notes">Notes</a>
+    <a href="/prediction">Prediction</a>
+
+</nav>
+
+
+
+
+<div class="container">
+
+
+    <h2>Automatic Quiz Creation</h2>
+
+
+    <p>
+        AI generates multiple choice questions
+        automatically from lecture notes.
+    </p>
+
+
+
+    <div class="card">
+
+        <h3>Quiz Features</h3>
+
+        <ul>
+
+            <li>AI based question generation</li>
+
+            <li>Multiple Choice Questions</li>
+
+            <li>Automatic evaluation</li>
+
+            <li>Score calculation</li>
+
+            <li>Performance tracking</li>
+
+        </ul>
+
+    </div>
+
+
+
+    <br>
+
+
+
+    <a href="/generate_quiz">
+
+        <button>
+            🤖 Generate AI Quiz
+        </button>
+
+    </a>
+
+
+
+    <br><br>
+
+
+
+    <h3>Start Quiz</h3>
+
+
+    <p>
+        Click below to attempt the generated quiz.
+    </p>
+
+
+
+    <a href="/quiz_attempt">
+
+        <button>
+            ▶ Start Quiz
+        </button>
+
+    </a>
+
+
+
+</div>
+
+
+
+
+<footer>
+
+    <p>
+        AI Virtual Classroom |
+        Intelligent Quiz System
+    </p>
+
+</footer>
+
+
+
+</body>
+
+</html>
