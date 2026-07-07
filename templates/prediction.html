@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Performance Prediction</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+    <h1>📊 Student Performance Prediction</h1>
+
+</header>
+
+
+
+<nav>
+
+    <a href="/">Home</a>
+    <a href="/dashboard">Dashboard</a>
+    <a href="/quiz">Quiz</a>
+    <a href="/reports">Reports</a>
+
+</nav>
+
+
+
+
+<div class="container">
+
+
+    <h2>AI Based Performance Analysis</h2>
+
+
+    <p>
+        Machine Learning predicts student performance
+        using attendance, quiz marks, and assignment scores.
+    </p>
+
+
+
+    <div class="card">
+
+        <h3>Prediction Inputs</h3>
+
+
+        <form action="/predict" method="POST">
+
+
+            <label>
+                Student ID
+            </label>
+
+            <input type="number"
+                   name="student_id"
+                   placeholder="Enter Student ID"
+                   required>
+
+
+
+            <label>
+                Attendance Percentage
+            </label>
+
+            <input type="number"
+                   name="attendance"
+                   placeholder="Example: 85"
+                   required>
+
+
+
+            <label>
+                Quiz Score
+            </label>
+
+            <input type="number"
+                   name="quiz_score"
+                   placeholder="Example: 80"
+                   required>
+
+
+
+            <label>
+                Assignment Score
+            </label>
+
+            <input type="number"
+                   name="assignment_score"
+                   placeholder="Example: 90"
+                   required>
+
+
+
+            <button type="submit">
+
+                Predict Performance
+
+            </button>
+
+
+        </form>
+
+    </div>
+
+
+
+    <br>
+
+
+
+    <div class="card-grid">
+
+
+        <div class="card">
+
+            <h3>🏆 Excellent</h3>
+
+            <p>
+                High attendance and academic performance.
+            </p>
+
+        </div>
+
+
+
+        <div class="card">
+
+            <h3>👍 Good</h3>
+
+            <p>
+                Student is performing well.
+            </p>
+
+        </div>
+
+
+
+        <div class="card">
+
+            <h3>⚠ Needs Improvement</h3>
+
+            <p>
+                Student requires additional support.
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+
+</div>
+
+
+
+
+<footer>
+
+    <p>
+        AI Virtual Classroom |
+        Machine Learning Prediction System
+    </p>
+
+</footer>
+
+
+
+</body>
+
+</html>
