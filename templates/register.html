@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Student</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<header>
+    <h1>🎓 Student Registration</h1>
+</header>
+
+<nav>
+    <a href="/">Home</a>
+    <a href="/dashboard">Dashboard</a>
+    <a href="/students">Students</a>
+</nav>
+
+<div class="container">
+
+    <h2>Register New Student</h2>
+
+    <form method="POST">
+
+        <label>Student Name</label>
+        <input type="text"
+               name="name"
+               placeholder="Enter Student Name"
+               required>
+
+        <label>USN</label>
+        <input type="text"
+               name="usn"
+               placeholder="Enter USN"
+               required>
+
+        <label>Department</label>
+        <input type="text"
+               name="department"
+               placeholder="Enter Department"
+               required>
+
+        <button type="submit">
+            Register Student
+        </button>
+
+    </form>
+
+    <br>
+
+    <a href="/students">
+        <button>View Students</button>
+    </a>
+
+</div>
+
+<footer>
+    <p>AI Virtual Classroom © 2026</p>
+</footer>
+
+</body>
+</html>
